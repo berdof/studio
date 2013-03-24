@@ -1,0 +1,91 @@
+.header {
+  background: rgba(255, 255, 255, 0.3);
+  -pie-background: rgba(255, 255, 255, 0.3);
+  behavior: url(PIE.htc);
+  position: fixed;
+  height: 91px;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid #fff;
+  min-width: 960px;
+}
+
+.logo {
+  @include spr(images, logo);
+  display: block;
+  margin: 24px 0 0;
+}
+
+.nav__header {
+  @extend .nav__hor;
+  margin: 52px 0 0;
+  a {
+    color: #3b5670;
+     @include trans(color,0.4s);
+    &.active,
+    &:hover {
+      color: #48a58c;
+    }
+  }
+}
+
+.support {
+  width: 175px;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  position: fixed;
+  top: 12px;
+  right: 0;
+  @include grad(linear-gradient(left, #65b7a1, #689fb2));
+  @include border-radius(2px 0 0 2px);
+  behavior: url(PIE.htc);
+  overflow: hidden;
+  @include trans(width,0.4s);
+  &.closed {
+    width: 49px;
+    .support_btn_ico {
+      @include spr(images, support_btn_ico-open);
+    }
+  }
+}
+
+.support_btn {
+  float: left;
+  display: block;
+  width: 23px;
+  height: 24px;
+  border-right: 1px solid #5fa996;
+  text-align: center;
+  cursor: pointer;
+}
+
+.support_btn_ico {
+  @include spr(images, support_btn_ico);
+  @include inline-block;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+
+.support_link {
+  overflow: hidden;
+  color: #fff !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  position: relative;
+  padding: 0 0 0 24px;
+  display: block;
+  line-height: 26px;
+  height: 24px;
+  border-left: 1px solid #6cc1ac;
+}
+
+.support_link_ico {
+  @include spr(images, support_link_ico);
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}

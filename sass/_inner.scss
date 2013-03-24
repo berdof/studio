@@ -1,0 +1,94 @@
+
+#container {
+  min-height: 100%;
+}
+
+.hfooter {
+  height: 36px;
+}
+#bg-parent{
+
+  position: relative;
+}
+#bg-image{
+
+
+}
+
+.inner {
+  .header, .footer {
+    background: #757e90;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: none;
+    @include opacity(1);
+    display:block;
+    a {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+  .portfolio_main_imgs_slider__arr-l {
+    top: 50%;
+    margin-top: -18px;
+  }
+  .footer {
+    margin-top: -36px;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
+  }
+}
+#project {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+#bg-parent {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+#bg-image {
+    cursor: move;
+/*    display: none;*/
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  img{
+/*    @include opacity(0);*/
+  }
+}
+.nav__soc__in {
+  @extend .nav__soc;
+  .nav__soc_twit {
+    @include images-sprite(twit-bi);
+  }
+  .nav__soc_fb {
+    @include images-sprite(fb-bi);
+  }
+  .nav__soc_vk {
+    @include images-sprite(vk-bi);
+  }
+}
+
+.nav__footer {
+  @extend .nav__content;
+  @include inline-block;
+  a {
+    font-size: 13px !important;
+    &.active {
+      &:after {
+        @include spr(images, arr-w);
+        margin-top: -3px;
+      }
+    }
+  }
+  li {
+    margin: 0;
+  }
+}
