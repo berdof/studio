@@ -1,5 +1,5 @@
-var  root = 'file:///D:/work/Denisov/html/images/';
-//var  root = 'http://crucer.ru/portf/denisov/images/';
+//var  root = 'file:///D:/work/Denisov/html/images/';
+var  root = 'http://crucer.ru/portf/denisov/images/';
 (function ($) {
     var imgList = [];
     $.extend({

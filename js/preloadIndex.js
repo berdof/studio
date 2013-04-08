@@ -8,7 +8,7 @@ $(function () {
         root+'firstBG-in1.png',
         root+'768/firstBG-in1.png',
         root+'firstBG-in2.png',
-        root+'images-s0e37a2cb08.png',
+        root+'images-s7f92dd6fa9.png',
         root+'liveBG.jpg',
         root+'portfolioBG.png',
         root+'projectsBG.jpg'

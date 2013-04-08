@@ -251,7 +251,7 @@ a:hover {
   font-style: normal;
 }
 
-.images-sprite, .logo, .support.closed .support_btn_ico, .support_btn_ico, .support_link_ico, .scroll-btn, .scroll-btn.up, .partner-slogan_ico_bitrix, .projects-slogan_ico, .nav__content a.active:after, .nav__content__live a.active:after, .nav__footer a.active:after, .nav__soc_twit, .nav__soc_vk, .nav__soc_fb, .portfolio_slider-main_close_ico, .portfolio_slider_preview-btn-ico, .portfolio_main_imgs_slider__arr-r .portfolio_main_imgs_slider__arr-ico, .portfolio_main_imgs_slider__arr-ico, .portfolio__arr_ico, .portfolio__arr-r .portfolio__arr_ico, .portfolio_thumbs_more_ico, .btn-toggler, .btn-toggler.active, .live-article-nav_prev, .live-article-nav_next, .live-article-nav_prev:hover, .live-article-nav_next:hover, .live-article-nav_prev.disabled, .disabled.live-article-nav_next, .live-team-article_spoiler:before, .projects-article-slogan.opened .projects-article-slogan_arr, .projects-article-slogan .projects-article-slogan_arr, .nav__soc_fb-white, .nav__soc_vk-white, .nav__soc_twit-white, .contacts-form:before, .contacts-form:after, .contacts__hint:after, .contacts__hint-reload, .nav__soc__in .nav__soc_twit, .nav__soc__in .nav__soc_fb, .nav__soc__in .nav__soc_vk, #portfolio .portfolio__arr-l .portfolio__arr_ico, #portfolio .portfolio__arr-r .portfolio__arr_ico, #portfolio .portfolio__arr-l:hover .portfolio__arr_ico, #portfolio .portfolio__arr-r:hover .portfolio__arr_ico, #portfolio .portfolio__arr-r:hover i.portfolio__arr_ico {
+.images-sprite, .logo, .support.closed .support_btn_ico, .support_btn_ico, .support_link_ico, .scroll-btn, .scroll-btn.up, .partner-slogan_ico_bitrix, .projects-slogan_ico, .nav__content a.active:after, .nav__content__live a.active:after, .nav__footer a.active:after, .nav__soc_twit, .nav__soc_vk, .nav__soc_fb, .portfolio_slider-main_close_ico, .portfolio_slider_preview-btn-ico, .portfolio_main_imgs_slider__arr-r .portfolio_main_imgs_slider__arr-ico, .portfolio_main_imgs_slider__arr-ico, .portfolio__arr_ico, .portfolio__arr-r .portfolio__arr_ico, .portfolio_thumbs_more_ico, .btn-toggler, .btn-toggler.active, .live-article-nav_prev, .live-article-nav_next, .live-article-nav_prev:hover, .live-article-nav_next:hover, .live-article-nav_prev.disabled, .disabled.live-article-nav_next, .live-team-article_spoiler:before, .projects-article-slogan.opened .projects-article-slogan_arr, .projects-article-slogan .projects-article-slogan_arr, .nav__soc_fb-white, .nav__soc_vk-white, .nav__soc_twit-white, .contacts-form:before, .contacts-form:after, .contacts__hint:after, .contacts__hint-reload, .nav__soc__in .nav__soc_twit, .nav__soc__in .nav__soc_fb, .nav__soc__in .nav__soc_vk {
   background: url('../images/images-s0e37a2cb08.png') no-repeat;
 }
 
@@ -331,8 +331,7 @@ h2 {
 }
 
 .loaded .header, .loaded #home, .loaded #portfolio, .loaded #live, .loaded #projects, .loaded #contacts {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+  display: block;
 }
 .loaded #progressContainer {
   display: none !important;
@@ -2252,6 +2251,25 @@ h2 {
     top: 62px;
   }
 
+  .portfolio__arr-l, .portfolio__arr-r,
+  .portfolio__arr-r {
+    background: none !important;
+  }
+
+  .portfolio__arr-l .portfolio__arr_ico, .portfolio__arr-r .portfolio__arr_ico {
+    background-position: -440px 0;
+  }
+  .portfolio__arr-l:hover .portfolio__arr_ico, .portfolio__arr-r:hover .portfolio__arr_ico {
+    background-position: -425px 0;
+  }
+
+  .portfolio__arr-r .portfolio__arr_ico {
+    background-position: -387px -130px;
+  }
+  .portfolio__arr-r:hover i.portfolio__arr_ico {
+    background-position: -342px -130px;
+  }
+
   /* --------------- / !portfolio End/ ---------*/
   /* --------------- / live Start/ ---------*/
   #live {
@@ -2313,20 +2331,4 @@ h2 {
   }
 
   /* --------------- / !contacts End/ ---------*/
-}
-#portfolio .portfolio__arr-l, #portfolio .portfolio__arr-r,
-#portfolio .portfolio__arr-r {
-  background: none !important;
-}
-#portfolio .portfolio__arr-l .portfolio__arr_ico, #portfolio .portfolio__arr-r .portfolio__arr_ico {
-  background-position: -440px 0;
-}
-#portfolio .portfolio__arr-l:hover .portfolio__arr_ico, #portfolio .portfolio__arr-r:hover .portfolio__arr_ico {
-  background-position: -425px 0;
-}
-#portfolio .portfolio__arr-r .portfolio__arr_ico {
-  background-position: -387px -130px;
-}
-#portfolio .portfolio__arr-r:hover i.portfolio__arr_ico {
-  background-position: -342px -130px;
 }
